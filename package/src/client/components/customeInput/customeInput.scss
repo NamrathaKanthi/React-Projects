@@ -1,0 +1,39 @@
+.ci-holder{
+    width: 100%;
+    padding-top: 18px;
+    position: relative;
+    .ci-label{
+        -webkit-transform-origin: bottom left;
+        transform-origin: bottom left;
+        -webkit-transition: all .3s cubic-bezier(0.4,0,0.2,1);
+        transition: all .3s cubic-bezier(0.4,0,0.2,1);
+        -webkit-transition-property: color,bottom,transform;
+        transition-property: color,bottom,transform;
+        font-size: 16px;
+        pointer-events: none;
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+        color: #afa6a6;
+        &.showLabel{
+            transform: scale(.75) translateY(-25px);
+            &.changeColor {
+                color: #4285f4;
+            }
+        }
+    }
+    .ci-input{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid rgba(0,0,0,0.12);
+        &:focus{
+            outline: none;
+            border-color: #4285f4;
+        }
+        &:disabled{
+            background-color: transparent;
+            opacity: 0.5;
+        }
+    }
+}

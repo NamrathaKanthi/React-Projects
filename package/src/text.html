@@ -1,0 +1,52 @@
+< !DOCTYPE html>
+    <html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <h2>Accordion</h2>
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <div class='col' id='jenkinsgroup'>
+                <br>&emsp;Jenkins Integration?
+                <input type="radio" name="jenkinsgroup1" value="1"> Yes
+                <input type="radio" name="jenkinsgroup1" value="2"> No
+                <div id="jenkinsgroup-1" class="toHide" style="display:none color:black">
+                    <br>&emsp;ServerUrl&nbsp;&nbsp;
+                    <input id="server" type="text" placeholder="Text input">
+                    <br>
+                    <br>&emsp;JobName&nbsp;&nbsp;
+                    <input id="jobname" type="text" placeholder="Text input" style="margin-bottom:10px">
+
+                </div>
+                <div id="jenkinsgroup-2" class="toHide" style="display:none color:black">
+                </div>
+            </div>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                        var ele = document.getElementsByName("jenkinsgroup1");
+                        for (var i = 0; i < ele.length; i++)
+                            ele[i].checked = false;
+                        $("#jenkinsgroup").css('background', '#ffffff');
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        $('.toHide').hide();
+                    }
+                });
+            }
+        </script>
+
+    </body>
+
+    </html>
