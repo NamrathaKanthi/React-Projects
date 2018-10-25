@@ -1,0 +1,18 @@
+.dropdown {
+    background-color: #fff !important;
+    border: 1px solid #ccc !important;
+    border: 1px solid rgba(0,0,0,.15) !important;
+    border-radius: 4px !important;
+}
+
+.list-unstyled {
+    padding-left: 0 !important;
+    list-style: none !important;
+}
+
+.list-unstyled{
+    li {
+        display: list-item !important;
+        text-align: -webkit-match-parent !important;
+    }
+}

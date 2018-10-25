@@ -1,0 +1,77 @@
+  .header{
+    margin-top: 20px;
+    .rainbow-img{
+      img{
+        height: 100px;
+      }
+      span{
+        height: 35px;
+        width: 50px;
+        color: #a78aff;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .p-t-0{
+    padding-top: 0px;
+  }
+  
+  .tonnavwrp{
+    float: right;
+    margin: 22px 0 0;
+    padding: 0;
+    display: block;
+  }
+  
+  .tonnavwrp li{
+    float: left;
+    list-style: outside none none;
+    margin: 0 6px;
+    position: relative;
+  }
+
+  .tonnavwrp .ambulance-icon{
+    height: 20px;
+    width: 50px;
+    color: #3d2979;
+    opacity: 0.8;
+  }
+  
+  .mhide{
+    display: block;
+  }
+  
+  .navgroup{
+    padding: 4px 10px 0px;
+    border: 1px solid rgba(125, 125, 125, 0.3);
+    border-radius: 20px;
+    display: flex;
+    margin-top: -5px;
+    height: 33px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  .iconnavtop{
+    margin: 0px;
+    padding: 0px;
+
+    li{
+        height: 15px;
+        width: 15px;
+        color: #3d2979;
+    }
+  }
+
+  .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+  .list-unstyled{
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+        width: 25px;
+    }
+}
